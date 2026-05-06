@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package net.videobot.additional_biomes;
 
 import java.util.List;
 import java.util.Set;
