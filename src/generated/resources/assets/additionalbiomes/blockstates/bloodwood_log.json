@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "additionalbiomes:block/bloodwood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "additionalbiomes:block/bloodwood_log"
+    },
+    "axis=z": {
+      "model": "additionalbiomes:block/bloodwood_log_horizontal",
+      "x": 90
+    }
+  }
+}

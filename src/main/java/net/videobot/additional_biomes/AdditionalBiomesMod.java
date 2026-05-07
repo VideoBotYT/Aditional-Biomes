@@ -1,6 +1,7 @@
 package net.videobot.additional_biomes;
 
 import net.videobot.additional_biomes.block.ModBlocks;
+import net.videobot.additional_biomes.creativetabs.CreativeList;
 import net.videobot.additional_biomes.item.ModItems;
 import org.slf4j.Logger;
 
@@ -57,6 +58,7 @@ public class AdditionalBiomesMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        CreativeList.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

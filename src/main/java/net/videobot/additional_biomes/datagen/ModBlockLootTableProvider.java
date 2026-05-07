@@ -25,7 +25,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-
+        this.dropSelf(ModBlocks.BLOODWOOD_LOG.get());
+        this.dropSelf(ModBlocks.BLOODWOOD_WOOD.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops){
