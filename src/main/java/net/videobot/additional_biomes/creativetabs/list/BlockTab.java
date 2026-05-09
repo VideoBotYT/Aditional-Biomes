@@ -20,5 +20,8 @@ public class BlockTab {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.BLOODWOOD_LOG);
                         output.accept(ModBlocks.BLOODWOOD_WOOD);
+                        output.accept(ModBlocks.STRIPPED_BLOODWOOD_LOG);
+                        output.accept(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
+                        output.accept(ModBlocks.BLOODWOOD_LEAVES);
                     }).build());
 }

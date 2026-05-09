@@ -16,5 +16,8 @@ public class ModLanguageProvider extends LanguageProvider {
 
         addBlock(ModBlocks.BLOODWOOD_LOG, "Bloodwood Log");
         addBlock(ModBlocks.BLOODWOOD_WOOD, "Bloodwood Wood");
+        addBlock(ModBlocks.STRIPPED_BLOODWOOD_LOG, "Stripped Bloodwood Log");
+        addBlock(ModBlocks.STRIPPED_BLOODWOOD_WOOD, "Stripped Bloodwood Wood");
+        addBlock(ModBlocks.BLOODWOOD_LEAVES, "Bloodwood Leaves");
     }
 }

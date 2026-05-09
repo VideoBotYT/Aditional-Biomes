@@ -22,6 +22,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.BLOODWOOD_LOG.get().asItem())
-                .add(ModBlocks.BLOODWOOD_WOOD.get().asItem());
+                .add(ModBlocks.BLOODWOOD_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_BLOODWOOD_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_BLOODWOOD_WOOD.get().asItem());
     }
 }
