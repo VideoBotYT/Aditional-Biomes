@@ -36,6 +36,8 @@ public class DateGenerators {
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
 
+        generator.addProvider(event.includeServer(), new ModDatapackProvider(packOutput, lookupProvider));
+
         // i'm not creating the translation file myself bro sob
         generator.addProvider(event.includeClient(), new ModLanguageProvider(packOutput));
     }

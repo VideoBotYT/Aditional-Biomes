@@ -10,6 +10,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
@@ -19,6 +20,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.videobot.additional_biomes.AdditionalBiomesMod;
 import net.videobot.additional_biomes.block.custom.ModFlammableRotatedPillarBlock;
 import net.videobot.additional_biomes.item.ModItems;
+import net.videobot.additional_biomes.worldgen.tree.ModTreeGrowers;
 
 import javax.annotation.Nullable;
 import java.util.function.Supplier;
@@ -85,6 +87,9 @@ public class ModBlocks {
                     return 30;
                 }
             });
+
+    public static final DeferredBlock<Block> BLOODWOOD_SAPLING = registerBlock("bloodwood_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.BLOODWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

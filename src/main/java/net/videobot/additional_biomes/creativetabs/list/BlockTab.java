@@ -23,5 +23,6 @@ public class BlockTab {
                         output.accept(ModBlocks.STRIPPED_BLOODWOOD_LOG);
                         output.accept(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
                         output.accept(ModBlocks.BLOODWOOD_LEAVES);
+                        output.accept(ModBlocks.BLOODWOOD_SAPLING);
                     }).build());
 }

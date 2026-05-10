@@ -31,6 +31,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
 
         leavesBlock(ModBlocks.BLOODWOOD_LEAVES);
+        saplingBlock(ModBlocks.BLOODWOOD_SAPLING);
     }
 
     private void leavesBlock(DeferredBlock<Block> blockRegistryObject) {
