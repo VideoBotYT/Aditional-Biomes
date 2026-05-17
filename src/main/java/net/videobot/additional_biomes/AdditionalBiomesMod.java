@@ -1,5 +1,8 @@
 package net.videobot.additional_biomes;
 
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.videobot.additional_biomes.block.ModBlocks;
 import net.videobot.additional_biomes.creativetabs.CreativeList;
 import net.videobot.additional_biomes.item.ModItems;
@@ -101,5 +104,13 @@ public class AdditionalBiomesMod {
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
+    }
+
+    public static ResourceLocation id(String name) {
+        return ResourceLocation.fromNamespaceAndPath(MODID, name);
+    }
+
+    public static <T> ResourceKey<T> key(ResourceKey<? extends Registry<T>> registryKey, String name){
+        return ResourceKey.create(registryKey, id(name));
     }
 }
